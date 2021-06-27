@@ -4,7 +4,7 @@ import Midform from './Midform'
 
 function Mid() {
     return (
-        <div className="mid d-flex justify-content-evenly">
+        <div className="my-5 d-flex justify-content-evenly">
             <Midtext/>
             <Midform/>
         </div>

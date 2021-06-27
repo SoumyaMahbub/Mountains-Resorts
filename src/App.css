@@ -13,6 +13,27 @@ p {
     margin-bottom: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    background-color: white;
+    border: 1px solid rgb(226, 226, 226)
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root {
+    --animate-duration: 2000ms;
+    --animate-delay: 0.9s;
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -40,7 +61,7 @@ p {
 }
 
 .main {
-    background-image: url('https://wallpaperaccess.com/full/3161112.png');
+    background-image: url('Components/img/background-mr.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -56,6 +77,11 @@ p {
 
 .logo {
     max-width: 170px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .mid-text {
@@ -85,6 +111,7 @@ p {
 
 .mid-table-wrapper {
     border: 1px solid rgb(226, 226, 226);
+    border-bottom: none;
     border-radius: 20px 20px 0 0;
 }
 
@@ -96,9 +123,6 @@ p {
     outline: none;
 }
 
-.mid-form-label {
-}
-
 .form-table {
     border-collapse: collapse;
     border-style: hidden;
@@ -106,7 +130,7 @@ p {
 
 .form-sections {
     border: 1px solid rgb(226, 226, 226);
-    padding: 6px 10px;
+    padding: 10px 12px;
 }
 
 .mid-form-btn {

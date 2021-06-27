@@ -3,8 +3,8 @@ import Logo from './img/logo.png'
 
 function Navbar() {
     return (
-        <div className="nav-bar d-flex justify-content-around">
-            <img className="logo" src={Logo}/>
+        <div className="nav-bar d-flex justify-content-around animate__animated animate__fadeInDown">
+            <img className="logo" draggable="false" src={Logo}/>
             <div className ="my-auto">
                 <a className="mx-4 text-gold" href="#">All Rooms</a>
                 <a className="mx-4 text-gold" href="#">Schedule</a>

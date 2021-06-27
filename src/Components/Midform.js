@@ -2,40 +2,45 @@ import React from 'react'
 
 function Midform() {
     return (
-        <div className="mid-form-wrapper bg-white text-start">
+        <div className="mid-form-wrapper bg-white text-start animate__animated animate__fadeInUp">
             <p className="fw-bold">Search Rooms</p>
-            <form className="mid-form my-4">
+            <form className="mid-form my-4" method="get"> 
 				<div className="mid-table-wrapper">
 					<table className="form-table" cellSpacing="0">
 						<tbody>
 							<tr>
 								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Check-in</label>
+									<label htmlFor="check-in" className="fs-12 text-gold fw-bold">Check-in</label>
 									<input className="border-none w-100" type="text" id="check-in"></input>
 								</td>
 								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Check-out</label>
-									<input className="border-none w-100" type="text" id="check-in"></input>
-								</td>
-							</tr>
-							<tr>
-								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Rooms</label>
-									<input className="border-none w-100" type="text" id="check-in"></input>
-								</td>
-								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Room Type</label>
-									<input className="border-none w-100" type="text" id="check-in"></input>
+									<label htmlFor="check-out" className="fs-12 text-gold fw-bold">Check-out</label>
+									<input className="border-none w-100" type="text" id="check-out"></input>
 								</td>
 							</tr>
 							<tr>
 								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Adults</label>
-									<input className="border-none w-100" type="text" id="check-in"></input>
+									<label htmlFor="rooms" className="fs-12 text-gold fw-bold">Rooms</label>
+									<input className="border-none w-100" type="number" id="rooms" min="1" max="9"></input>
 								</td>
 								<td className="form-sections">
-									<label htmlFor="check-in" className="fs-12 text-gold mid-form-label fw-bold">Children</label>
-									<input className="border-none w-100" type="text" id="check-in"></input>
+									<label htmlFor="room-type" className="fs-12 text-gold fw-bold">Room Type</label>
+									<input className="border-none w-100" type="text" id="room-type"></input>
+								</td>
+							</tr>
+							<tr>
+								<td className="form-sections">
+									<div>
+										<label htmlFor="adults" className="fs-12 text-gold fw-bold">Adults</label>
+										<input className="border-none w-75" type="number" id="adults" min="0"></input>
+									</div>
+									{/* <div>
+										<button>+</button>
+									</div> */}
+								</td>
+								<td className="form-sections">
+									<label htmlFor="children" className="fs-12 text-gold fw-bold">Children</label>
+									<input className="border-none w-75" type="number" id="children" min="0"></input>
 								</td>
 							</tr>
 						</tbody>

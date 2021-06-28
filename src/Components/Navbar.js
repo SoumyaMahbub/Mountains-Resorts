@@ -3,17 +3,17 @@ import Logo from './img/logo.png'
 
 function Navbar() {
     return (
-        <div className="nav-bar d-flex justify-content-around animate__animated animate__fadeInDown">
+        <div className="nav-bar animate__animated animate__fadeInDown">
             <img className="logo" draggable="false" src={Logo}/>
             <div className ="my-auto">
-                <a className="mx-4 text-gold" href="#">All Rooms</a>
-                <a className="mx-4 text-gold" href="#">Schedule</a>
-                <a className="mx-4 text-gold" href="#">Customers</a>
-                <a className="mx-4 text-gold" href="#">Contact Us</a>
+                <a className="nav-link mx-2 text-gold" href="#">All Rooms</a>
+                <a className="nav-link mx-2 text-gold" href="#">Schedule</a>
+                <a className="nav-link mx-2 text-gold" href="#">Customers</a>
+                <a className="nav-link mx-2 text-gold" href="#">Contact Us</a>
             </div>
             <div className="my-auto">
-                <a className="text-gold d-inline mx-2">Sign Up</a>
-                <a className="text-gold d-inline mx-2">Login</a>
+                <a className="nav-link text-gold mx-2">Sign Up</a>
+                <a className="nav-link text-gold mx-2">Login</a>
             </div>
         </div>
     )

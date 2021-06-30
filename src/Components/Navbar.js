@@ -15,6 +15,7 @@ function Navbar() {
                 <a className="nav-link text-gold mx-2">Sign Up</a>
                 <a className="nav-link text-gold mx-2">Login</a>
             </div>
+            <a className="fas fa-bars menu-icon text-gold" href="#menu"></a>
         </div>
     )
 }

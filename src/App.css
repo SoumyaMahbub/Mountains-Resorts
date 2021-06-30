@@ -81,6 +81,10 @@ input[type=number] {
     display: inline;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .logo {
     max-width: 170px;
     -webkit-user-select: none;
@@ -165,6 +169,10 @@ input[type=number] {
     color: rgb(98, 98, 98);
 }
 
+#menu {
+    display: none;
+}
+
 @media screen and (min-height: 890px) and (max-width:890px)){
     .main {
       height: 1000px;
@@ -208,6 +216,7 @@ input[type=number] {
     }
     .logo {
         max-width: 150px;
+        margin: auto 10px;
     }
     .nav-link {
         display: none;
@@ -215,12 +224,23 @@ input[type=number] {
     .mid {
         display: block;
     }
+    .mid-h {
+        margin: 0 auto;
+    }
     .mid-text{
         width: 90%;
         margin: 50px auto;
         text-align: center;
     }
     .mid-form-wrapper {
-        margin: 0 auto;
+        margin: 0 auto;    
+    }
+    .menu-icon{
+        display: inline;
+        margin: auto 20px;
+        font-size: 34px;
+    }
+    #menu {
+        display: block;
     }
 }        

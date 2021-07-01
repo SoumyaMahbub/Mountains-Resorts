@@ -1,19 +1,22 @@
 import React from 'react'
 import Logo from './img/logo.png'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
         <div className="nav-bar animate__animated animate__fadeInDown">
-            <img className="logo" draggable="false" src={Logo}/>
+            <Link to="/">
+                <img className="logo" draggable="false" src={Logo}/>
+            </Link>
             <div className ="my-auto">
-                <a className="nav-link mx-2 text-gold" href="#">All Rooms</a>
-                <a className="nav-link mx-2 text-gold" href="#">Schedule</a>
-                <a className="nav-link mx-2 text-gold" href="#">Customers</a>
-                <a className="nav-link mx-2 text-gold" href="#">Contact Us</a>
+                <Link className="nav-link mx-2 text-gold" to="/rooms">All Rooms</Link>
+                <Link className="nav-link mx-2 text-gold" to="#">Gallery</Link>
+                <Link className="nav-link mx-2 text-gold" to="#">Location</Link>
+                <Link className="nav-link mx-2 text-gold" to="#">Contact Us</Link>
             </div>
             <div className="my-auto">
-                <a className="nav-link text-gold mx-2">Sign Up</a>
-                <a className="nav-link text-gold mx-2">Login</a>
+                <Link className="nav-link text-gold mx-2" to="#">Sign Up</Link>
+                <Link className="nav-link text-gold mx-2" to="#">Login</Link>
             </div>
             <a className="fas fa-bars menu-icon text-gold" href="#menu"></a>
         </div>

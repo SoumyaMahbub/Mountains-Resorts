@@ -5,7 +5,6 @@ import './App.css'
 import Main from './Components/Main'
 import Menu from './Components/Menu'
 
-
 function App() {
 	return (
 		<div className="App">
